@@ -3,6 +3,19 @@ a = np.array([0,1,2,3,4,5,6,7,8,9,10,11])
 print(a)
 print(a[2])  # 索引访问
 print(a[1:3])  # 这切片是1到3-1
+print(a[a > 3]) # 条件进行索引
+five_up = (a > 5) | (a == 5) # 表示真值数组，也可以用np.logical_or(a > 5,a == 5)代替
+print(five_up)
+print(np.where(a > 5))  # 用于寻找符合条件的元素索引
+a1 = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+six_up = (a1 > 6) | (a1 == 6)
+a2 = np.where(six_up)
+print(list(zip(a2[0],a2[1])))  # 这里的zip是为了将这行列索引互相配对组合，原本是纯行索引和纯列索引
+#  输出的是np.int64类型的数，但是不影响数值计算，如果想要进行转化，1.转化为列表再zip   2.zip后再转化
+print(list(zip(a2[0].tolist(),a2[1].tolist())))  #  转化成列表在进行zip
+a3 = list(zip(a2[0],a2[1]))  #  zip后在进行转化
+a4 = [(int(x),int(y)) for x,y in a3]  #  列表推导式，详情见可迭代对象处理Iterable_Object_Handling.py
+print(a4)
 
 # a[start:stop:step] start开始索引 stop结束索引 step步长
 # start没写默认是0,stop没写默认是结束,step没写默认是1
@@ -47,6 +60,15 @@ print(i)
 # 对数组进行拼接
 k = np.array([[1,3,5,7],[2,4,6,8]])
 l = np.array([[2,4,6,8],[1,3,5,7]])
-print(np.concatenate((k,l),axis = 1))
+print(np.concatenate((k,l),axis = 1)) # 注意要加一个括号让这两个形成元组
 print(k)
 print(l)
+
+m = np.array([1,2,3,4,5])
+print(m.shape)
+m1 = m[:,np.newaxis]  # 增加一个新的轴，维度
+m2 = m[np.newaxis,:]
+m3 = np.expand_dims(m,axis = 0)
+print(m1.shape,m2.shape,m3.shape)
+print(m1,m2,m3)
+
