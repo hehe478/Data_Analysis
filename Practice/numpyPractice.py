@@ -72,3 +72,22 @@ m3 = np.expand_dims(m,axis = 0)
 print(m1.shape,m2.shape,m3.shape)
 print(m1,m2,m3)
 
+n = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+print(n.ravel().shape)  # 将一个数组展平，返回一个新数组
+print(n.T.shape)  # 将一个数组转置，返回一个新数组
+print(n.reshape(2,6).shape)  # 改变数组的形状，返回一个新数组
+print(n.reshape(4,-1).shape)  # -1的含义是指定好其他维度，剩下-1，所在的维度的自动计算
+print(n.shape)
+print(n.flatten())  # 将原数组展平
+n = n.T  # 将原数组进行转置
+print(n.shape)
+print(n.resize(2,6))  # 在原数组的基础上进行修改形状
+
+# 切分数组
+o = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+print(np.split(o,2,axis = 1))  # 沿着指定的轴，根据参数切分数组，此处是将数组分隔成两个数组
+print(np.split(o,(1,2),axis = 0))  # 此处是按照行索引0,1进行切分数组
+
+p = np.array([[1,2,3,4],[5,6,7,8]])
+p1 = p.copy()  # 复制一个副本进行操作，方便多次对同一数组进行操作，防止互相污染
+p2 = p.view()  # 创建一个视图，方便区分对同一数组进行分阶段操作

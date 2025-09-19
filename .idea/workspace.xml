@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="Practice numpy">
-      <change afterPath="$PROJECT_DIR$/Practice/Iterable_Object_Handling.py" afterDir="false" />
+    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="A little numpy learn and some Iterable_Object_Handling learn">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Practice/numpyPractice.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/numpyPractice.py" afterDir="false" />
     </list>
@@ -33,21 +32,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Iterable_Object_Handling.executor": "Run",
-    "Python.numpyPractice.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Iterable_Object_Handling.executor&quot;: &quot;Run&quot;,
+    &quot;Python.numpyPractice.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -66,7 +65,8 @@
       <updated>1758097567086</updated>
       <workItem from="1758097568184" duration="3403000" />
       <workItem from="1758117484562" duration="5841000" />
-      <workItem from="1758201301501" duration="8156000" />
+      <workItem from="1758201301501" duration="8607000" />
+      <workItem from="1758287702596" duration="3287000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -84,7 +84,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758123781393</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="A little numpy learn and some Iterable_Object_Handling learn">
+      <option name="closed" value="true" />
+      <created>1758209990547</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758209990547</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,10 +112,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Practice numpy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Practice numpy" />
+    <MESSAGE value="A little numpy learn and some Iterable_Object_Handling learn" />
+    <option name="LAST_COMMIT_MESSAGE" value="A little numpy learn and some Iterable_Object_Handling learn" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ForGoals$Iterable_Object_Handling.coverage" NAME="Iterable_Object_Handling 覆盖结果" MODIFIED="1758209538789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/ForGoals$numpyPractice.coverage" NAME="numpyPractice 覆盖结果" MODIFIED="1758203410860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/ForGoals$Iterable_Object_Handling.coverage" NAME="Iterable_Object_Handling 覆盖结果" MODIFIED="1758209689123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/ForGoals$numpyPractice.coverage" NAME="numpyPractice 覆盖结果" MODIFIED="1758290606570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
   </component>
 </project>
