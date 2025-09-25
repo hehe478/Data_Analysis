@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="some martix calculation learn and AHP and TOPSIS codes,but maybe tomorrow I will change my TOPSIS because it has too many warnings and spelling errors">
+    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="Some codes about TOPSIS but it's a little hard.And I'm strange about it,so I will absort these experiences and improve it next time.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm/TOPSIS1.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm/TOPSIS1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/AHP.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/AHP.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -31,24 +36,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.AHP.executor": "Run",
-    "Python.Iterable_Object_Handling.executor": "Run",
-    "Python.TOPSIS.executor": "Run",
-    "Python.TOPSIS1.executor": "Run",
-    "Python.numpyPractice.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.AHP.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Iterable_Object_Handling.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TOPSIS.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TOPSIS1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.numpyPractice.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ForGoals\E_and_A_algorithm\scoring_algorithm" />
@@ -81,7 +86,9 @@
       <workItem from="1758554484082" duration="5154000" />
       <workItem from="1758634841301" duration="7433000" />
       <workItem from="1758708247622" duration="535000" />
-      <workItem from="1758721898570" duration="6078000" />
+      <workItem from="1758721898570" duration="6514000" />
+      <workItem from="1758787125091" duration="1419000" />
+      <workItem from="1758789503638" duration="1091000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -155,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758642297404</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Some codes about TOPSIS but it's a little hard.And I'm strange about it,so I will absort these experiences and improve it next time.">
+      <option name="closed" value="true" />
+      <created>1758728416710</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1758728416710</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,13 +196,14 @@
     <MESSAGE value="A Little learn about broadcasting machanism and matrix operations" />
     <MESSAGE value="A Little but more learn about broadcasting mechanism" />
     <MESSAGE value="some martix calculation learn and AHP and TOPSIS codes,but maybe tomorrow I will change my TOPSIS because it has too many warnings and spelling errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="some martix calculation learn and AHP and TOPSIS codes,but maybe tomorrow I will change my TOPSIS because it has too many warnings and spelling errors" />
+    <MESSAGE value="Some codes about TOPSIS but it's a little hard.And I'm strange about it,so I will absort these experiences and improve it next time." />
+    <option name="LAST_COMMIT_MESSAGE" value="Some codes about TOPSIS but it's a little hard.And I'm strange about it,so I will absort these experiences and improve it next time." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ForGoals$Iterable_Object_Handling.coverage" NAME="Iterable_Object_Handling 覆盖结果" MODIFIED="1758209689123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/ForGoals$numpyPractice.coverage" NAME="numpyPractice 覆盖结果" MODIFIED="1758641074910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/ForGoals$TOPSIS1.coverage" NAME="TOPSIS1 覆盖结果" MODIFIED="1758726995472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm" />
-    <SUITE FILE_PATH="coverage/ForGoals$AHP.coverage" NAME="AHP 覆盖结果" MODIFIED="1758641146399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm" />
+    <SUITE FILE_PATH="coverage/ForGoals$TOPSIS1.coverage" NAME="TOPSIS1 覆盖结果" MODIFIED="1758789634135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm" />
+    <SUITE FILE_PATH="coverage/ForGoals$AHP.coverage" NAME="AHP 覆盖结果" MODIFIED="1758790375995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
     <SUITE FILE_PATH="coverage/ForGoals$TOPSIS.coverage" NAME="TOPSIS 覆盖结果" MODIFIED="1758642032343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm" />
   </component>
 </project>
