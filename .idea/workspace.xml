@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="Some codes about TOPSIS but it's a little hard.And I'm strange about it,so I will absort these experiences and improve it next time.">
+    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="optimize AHP and TOPSIS codes , add validation check section to improve the code robustness, polish the output">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm/TOPSIS1.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm/TOPSIS1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/AHP.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/AHP.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +86,7 @@
       <workItem from="1758708247622" duration="535000" />
       <workItem from="1758721898570" duration="6514000" />
       <workItem from="1758787125091" duration="1419000" />
-      <workItem from="1758789503638" duration="1091000" />
+      <workItem from="1758789503638" duration="2518000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -170,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758728416710</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="optimize AHP and TOPSIS codes , add validation check section to improve the code robustness, polish the output">
+      <option name="closed" value="true" />
+      <created>1758791341468</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1758791341468</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,13 +203,14 @@
     <MESSAGE value="A Little but more learn about broadcasting mechanism" />
     <MESSAGE value="some martix calculation learn and AHP and TOPSIS codes,but maybe tomorrow I will change my TOPSIS because it has too many warnings and spelling errors" />
     <MESSAGE value="Some codes about TOPSIS but it's a little hard.And I'm strange about it,so I will absort these experiences and improve it next time." />
-    <option name="LAST_COMMIT_MESSAGE" value="Some codes about TOPSIS but it's a little hard.And I'm strange about it,so I will absort these experiences and improve it next time." />
+    <MESSAGE value="optimize AHP and TOPSIS codes , add validation check section to improve the code robustness, polish the output" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimize AHP and TOPSIS codes , add validation check section to improve the code robustness, polish the output" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ForGoals$Iterable_Object_Handling.coverage" NAME="Iterable_Object_Handling 覆盖结果" MODIFIED="1758209689123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/ForGoals$numpyPractice.coverage" NAME="numpyPractice 覆盖结果" MODIFIED="1758641074910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/ForGoals$TOPSIS1.coverage" NAME="TOPSIS1 覆盖结果" MODIFIED="1758789634135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm" />
-    <SUITE FILE_PATH="coverage/ForGoals$AHP.coverage" NAME="AHP 覆盖结果" MODIFIED="1758790375995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
+    <SUITE FILE_PATH="coverage/ForGoals$AHP.coverage" NAME="AHP 覆盖结果" MODIFIED="1758790835732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
     <SUITE FILE_PATH="coverage/ForGoals$TOPSIS.coverage" NAME="TOPSIS 覆盖结果" MODIFIED="1758642032343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm" />
   </component>
 </project>
