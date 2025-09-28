@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="A day without coding">
-      <change afterPath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/EWM.py" afterDir="false" />
+    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="A bad statement today and just made EWM , I am a little confused why I code so hard">
+      <change afterPath="$PROJECT_DIR$/Leave/DayWithoutCoding25928.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm/TOPSIS.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm/TOPSIS.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +92,8 @@
       <workItem from="1758899362446" duration="122000" />
       <workItem from="1758981805354" duration="535000" />
       <workItem from="1758982367659" duration="3395000" />
-      <workItem from="1758985803943" duration="356000" />
+      <workItem from="1758985803943" duration="1027000" />
+      <workItem from="1759071622155" duration="707000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -191,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758899475527</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="A bad statement today and just made EWM , I am a little confused why I code so hard">
+      <option name="closed" value="true" />
+      <created>1758986520806</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1758986520806</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,12 +228,13 @@
     <MESSAGE value="Some codes about TOPSIS but it's a little hard.And I'm strange about it,so I will absort these experiences and improve it next time." />
     <MESSAGE value="optimize AHP and TOPSIS codes , add validation check section to improve the code robustness, polish the output" />
     <MESSAGE value="A day without coding" />
-    <option name="LAST_COMMIT_MESSAGE" value="A day without coding" />
+    <MESSAGE value="A bad statement today and just made EWM , I am a little confused why I code so hard" />
+    <option name="LAST_COMMIT_MESSAGE" value="A bad statement today and just made EWM , I am a little confused why I code so hard" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ForGoals$Iterable_Object_Handling.coverage" NAME="Iterable_Object_Handling 覆盖结果" MODIFIED="1758209689123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/ForGoals$EWM.coverage" NAME="EWM 覆盖结果" MODIFIED="1758986231152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
-    <SUITE FILE_PATH="coverage/ForGoals$numpyPractice.coverage" NAME="numpyPractice 覆盖结果" MODIFIED="1758641074910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/ForGoals$numpyPractice.coverage" NAME="numpyPractice 覆盖结果" MODIFIED="1758986773303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/ForGoals$TOPSIS1.coverage" NAME="TOPSIS1 覆盖结果" MODIFIED="1758789634135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm" />
     <SUITE FILE_PATH="coverage/ForGoals$AHP.coverage" NAME="AHP 覆盖结果" MODIFIED="1758790835732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
     <SUITE FILE_PATH="coverage/ForGoals$TOPSIS.coverage" NAME="TOPSIS 覆盖结果" MODIFIED="1758642032343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm" />
