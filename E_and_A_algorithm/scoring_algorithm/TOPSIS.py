@@ -1,102 +1,77 @@
 import numpy as np
-
-# TOPSIS法，用于计算得分的方法
-
-# ******************************************************************************（可以修改的地方）
-
-# 1.设置转化函数
-# 所有的参数传入请用np.array类型的数据请用
-# 所有的参数都需要注意是都有严重偏离的数据，若有需要修改下列函数防止对结果造成影响
-# 即因为若有严重偏离的数据，将会导致其他数据被压缩到一个极小的范围，无法显示差异
-# 在数据使用前进行数据预处理
-# 1.盖帽法  2.对数转化  3.删除
-# 1.1 极大型转化
-def to_max(x):  # 其实是毫无用处的一步，只是为了占位，代表这里有一个函数，方便以后如有需要进行修改
-    return x
-# 1.2 极小型转化
-def min_to_max(x):
-    max_x = np.max(x)
-    return max_x - x
-# 1.3 中间型转化
-def mid_to_max(x, best):
-    x = np.abs(x - best)
-    max_x = np.max(x)
-    if max_x == 0:
-        return np.ones_like(x)
-    return 1 - x / max_x
-# 1.4 区间型转化
-def reg_to_max(x, reg):
-    low_x, high_x = reg[0], reg[1]  # 取出范围，方便使用
-    # 使用&进行元素级逻辑与运算，并用括号明确优先级
-    mask_low = x < low_x
-    mask_high = x > high_x
-    mask_mid = ~mask_low & ~mask_high  # 既不小于下限也不大于上限
-    # 计算最大偏离值
-    deviations = np.concatenate([low_x - x[mask_low], x[mask_high] - high_x])
-    if len(deviations) == 0:  # 所有值都在区间内
-        return np.ones_like(x)
-    max_deviation = np.max(deviations)
-    # 对不同范围的数据进行处理
-    x_processed = np.zeros_like(x, dtype=float)
-    x_processed[mask_low] = 1 - (low_x - x[mask_low]) / max_deviation
-    x_processed[mask_high] = 1 - (x[mask_high] - high_x) / max_deviation
-    x_processed[mask_mid] = 1  # 区间内的值为1
-    return x_processed
-
-
-# 2.输入矩阵，设置好评价参数
+# 从我们自己创建的 preprocessor.py 文件中，导入两个独立的函数：
+# forward_matrix: 仅用于指标正向化
+# scale_vector: 仅用于TOPSIS专属的向量归一化
+from E_and_A_algorithm.weighting_algorthm.pre_processor import forward_matrix,scale_vector
+# 1.输入原始评价矩阵，并设置好评价参数
 matrix = np.array([[1, 2, 3, 4],
                    [5, 6, 7, 8],
                    [9, 10, 11, 12],
-                   [13, 14, 15, 16]])
-row_type = np.array([0, 1, 2, 3])  # 表示每一列的类型，区分数据进行的不同的转化
-row_best = [0, 0, 9, [13, 14]]  # 表示每一列需要的最佳数值或者区间，即使不需要，为了方便区分也进行了填充
+                   [13, 14, 15, 16]], dtype=float)
 
-# ******************************************************************************（其他代码可复用）
+# 2.定义每个指标的类型
+# 0: 极大型, 1: 极小型, 2: 中间型, 3: 区间型
+row_type = np.array([0, 1, 2, 3])
+
+# 3.为中间型或区间型指标提供最优值/最优区间
+# 对于非中间/区间型指标，可以用任意值（如0）填充占位
+row_best = [0, 0, 9, [13, 14]]
+
+# ******************************************************************************（其他地方可复用）
+
+# 4. 数据预处理 (采用新的两步法)
+# 通过分步调用，数据处理的流程和意图一目了然。
+
+# 4.1 第一步：指标正向化
+# 调用 forward_matrix 函数，确保所有指标都变为“越大越好”的趋势。
+print("--- 步骤1: 正在进行指标正向化... ---")
+forwarded_matrix = forward_matrix(matrix, row_type, row_best)
+print("--- 正向化后的矩阵 ---")
+print(forwarded_matrix)
+print("-" * 30)
+
+# 4.2 第二步：向量归一化
+# 调用 scale_vector 函数，这是TOPSIS方法的标准归一化步骤，
+# 用于消除量纲影响，并为后续的距离计算做准备。
+print("--- 步骤2: 正在进行向量归一化... ---")
+processed_matrix = scale_vector(forwarded_matrix)
+print("--- 最终预处理完成的矩阵 ---")
+print(processed_matrix)
+print("-" * 30)
 
 
-
-# 3.处理矩阵，正向化处理
-m, n = matrix.shape  # 获取矩阵的形状
-processed_matrix = matrix.copy().astype(float)
-
-for i in range(n):
-    array = matrix[:, i]
-    if row_type[i] == 0:
-        processed_array = to_max(array)
-    elif row_type[i] == 1:
-        processed_array = min_to_max(array)
-    elif row_type[i] == 2:
-        processed_array = mid_to_max(array, row_best[i])
-    elif row_type[i] == 3:
-        processed_array = reg_to_max(array, row_best[i])
-    processed_matrix[:, i] = processed_array
-
-# 4.标准化处理
-for j in range(n):
-    col_sum_sq = np.sum(processed_matrix[:, j] ** 2)
-    if col_sum_sq != 0:
-        processed_matrix[:, j] = processed_matrix[:, j] / np.sqrt(col_sum_sq)
-# 如果全部都是0才能使col_sum_sq = 0,那个时候就不需要转化了
-
-
-# 5.计算距离，统计得分
-# 计算理想解和负理想解
-ideal_best = np.max(processed_matrix, axis=0)  # 统计所有的研究对象中最优和最差，需要按行进行处理
+# 5.计算距离与得分
+# 5.1 确定最优理想解 (Ideal Best) 和最劣理想解 (Ideal Worst)
+# 最优理想解由处理后矩阵的每列最大值构成
+ideal_best = np.max(processed_matrix, axis=0)
+# 最劣理想解由处理后矩阵的每列最小值构成
 ideal_worst = np.min(processed_matrix, axis=0)
 
-# 计算到理想解和负理想解的距离
-d_best = np.sqrt(np.sum(np.square(processed_matrix - ideal_best), axis=1))  # 将每一个研究对象的各个项目和最优最差的数据进行对比，按列进行处理
+# 5.2 计算各评价对象到最优和最劣理想解的欧几里得距离
+# axis=1 表示按行计算，即为每个评价对象计算一个距离值
+d_best = np.sqrt(np.sum(np.square(processed_matrix - ideal_best), axis=1))
 d_worst = np.sqrt(np.sum(np.square(processed_matrix - ideal_worst), axis=1))
 
-print("每个指标理想最佳值：", ideal_best)
-print("每个指标理想最差值：", ideal_worst)
-print("到理想最佳解的距离：", d_best)
-print("到理想最差解的距离：", d_worst)
-
-# 计算得分
+# 5.3 计算各评价对象的最终得分
+# 得分公式 C_i = d_worst / (d_best + d_worst)
+# 该得分是一个介于0和1之间的值，越接近1表示结果越优
 scores = d_worst / (d_best + d_worst)
-normalized_scores = 100 * scores / np.sum(scores)  # 转化为百分制
 
-for i in range(len(normalized_scores)):
-    print(f"第{i + 1}个评价对象得分为：{normalized_scores[i]:.2f}")
+
+# 6. 输出最终结果
+print("\n--- TOPSIS 法计算结果 ---")
+print(f"每个指标的最优理想值 (Ideal Best): {[f'{val:.4f}' for val in ideal_best]}")
+print(f"每个指标的最劣理想值 (Ideal Worst): {[f'{val:.4f}' for val in ideal_worst]}")
+print(f"各评价对象到最优解的距离 (D+): {[f'{val:.4f}' for val in d_best]}")
+print(f"各评价对象到最劣解的距离 (D-): {[f'{val:.4f}' for val in d_worst]}")
+print("-" * 30)
+
+print("--- 最终得分 ---")
+for i, score in enumerate(scores):
+    print(f"第 {i + 1} 个评价对象的得分为 (0-1范围): {score:.4f}")
+
+# 您也可以像之前一样，将得分转化为百分制进行输出
+# normalized_scores = 100 * scores / np.sum(scores)
+# print("\n--- 百分制得分 ---")
+# for i, score in enumerate(normalized_scores):
+#     print(f"第 {i + 1} 个评价对象的百分制得分为: {score:.2f}")

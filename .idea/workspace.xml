@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="A bad statement today and just made EWM , I am a little confused why I code so hard">
-      <change afterPath="$PROJECT_DIR$/Leave/DayWithoutCoding25928.py" afterDir="false" />
+    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="A day without coding">
+      <change afterPath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/CRITIC.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/Coefficient_of_Variation_Method.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/Entropy_Weight_Method.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/pre_processor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm/TOPSIS.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm/TOPSIS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/AHP.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/Analytic_Hierarchy_Process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/EWM.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +44,9 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Python.AHP.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CRITIC.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CVM.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Coefficient_of_Variation_Method.executor&quot;: &quot;Run&quot;,
     &quot;Python.EWM.executor&quot;: &quot;Run&quot;,
     &quot;Python.Iterable_Object_Handling.executor&quot;: &quot;Run&quot;,
     &quot;Python.TOPSIS.executor&quot;: &quot;Run&quot;,
@@ -93,7 +102,9 @@
       <workItem from="1758981805354" duration="535000" />
       <workItem from="1758982367659" duration="3395000" />
       <workItem from="1758985803943" duration="1027000" />
-      <workItem from="1759071622155" duration="707000" />
+      <workItem from="1759071622155" duration="820000" />
+      <workItem from="1759153766968" duration="7298000" />
+      <workItem from="1759161173748" duration="1143000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -199,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758986520806</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="A day without coding">
+      <option name="closed" value="true" />
+      <created>1759072416322</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1759072416322</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,16 +246,19 @@
     <MESSAGE value="some martix calculation learn and AHP and TOPSIS codes,but maybe tomorrow I will change my TOPSIS because it has too many warnings and spelling errors" />
     <MESSAGE value="Some codes about TOPSIS but it's a little hard.And I'm strange about it,so I will absort these experiences and improve it next time." />
     <MESSAGE value="optimize AHP and TOPSIS codes , add validation check section to improve the code robustness, polish the output" />
-    <MESSAGE value="A day without coding" />
     <MESSAGE value="A bad statement today and just made EWM , I am a little confused why I code so hard" />
-    <option name="LAST_COMMIT_MESSAGE" value="A bad statement today and just made EWM , I am a little confused why I code so hard" />
+    <MESSAGE value="A day without coding" />
+    <option name="LAST_COMMIT_MESSAGE" value="A day without coding" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ForGoals$Iterable_Object_Handling.coverage" NAME="Iterable_Object_Handling 覆盖结果" MODIFIED="1758209689123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/ForGoals$EWM.coverage" NAME="EWM 覆盖结果" MODIFIED="1758986231152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
+    <SUITE FILE_PATH="coverage/ForGoals$EWM.coverage" NAME="EWM 覆盖结果" MODIFIED="1759155885487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
     <SUITE FILE_PATH="coverage/ForGoals$numpyPractice.coverage" NAME="numpyPractice 覆盖结果" MODIFIED="1758986773303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/ForGoals$TOPSIS1.coverage" NAME="TOPSIS1 覆盖结果" MODIFIED="1758789634135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm" />
     <SUITE FILE_PATH="coverage/ForGoals$AHP.coverage" NAME="AHP 覆盖结果" MODIFIED="1758790835732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
-    <SUITE FILE_PATH="coverage/ForGoals$TOPSIS.coverage" NAME="TOPSIS 覆盖结果" MODIFIED="1758642032343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm" />
+    <SUITE FILE_PATH="coverage/ForGoals$CVM.coverage" NAME="CVM 覆盖结果" MODIFIED="1759155327604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
+    <SUITE FILE_PATH="coverage/ForGoals$CRITIC.coverage" NAME="CRITIC 覆盖结果" MODIFIED="1759158596091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
+    <SUITE FILE_PATH="coverage/ForGoals$TOPSIS.coverage" NAME="TOPSIS 覆盖结果" MODIFIED="1759162294658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm" />
+    <SUITE FILE_PATH="coverage/ForGoals$Coefficient_of_Variation_Method.coverage" NAME="Coefficient_of_Variation_Method 覆盖结果" MODIFIED="1759158640048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
   </component>
 </project>
