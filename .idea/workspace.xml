@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="Refactor: Modularize preprocessing and configure project imports&#10;&#10;This commit refactors the data preprocessing pipeline and configures&#10;the project environment for robust cross-package imports.&#10;&#10;Key changes include:&#10;- Extracted all data processing logic into a dedicated&#10;  `pre_processor.py` module to improve reusability.&#10;&#10;- Decomposed the workflow into two distinct, composable steps:&#10;  1. Indicator forwarding (`forward_matrix`)&#10;  2. Data scaling (`scale_min_max`, `scale_z_score`, etc.)&#10;&#10;- **Configured the PyCharm project's Sources Root to enable absolute&#10;  imports between the `scoring_algorithm` and `weighting_algorithm`&#10;  packages.**&#10;&#10;- Updated all core algorithm scripts (TOPSIS, CRITIC, Entropy, CV)&#10;  to use the new modular functions via absolute imports.&#10;&#10;This change significantly reduces code duplication and clarifies the&#10;overall project architecture, making it more scalable and maintainable." />
+    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="A day without coding" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,6 +96,7 @@
       <workItem from="1759071622155" duration="820000" />
       <workItem from="1759153766968" duration="7298000" />
       <workItem from="1759161173748" duration="1616000" />
+      <workItem from="1759246994374" duration="159000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -217,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759162785573</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="A day without coding">
+      <option name="closed" value="true" />
+      <created>1759247143241</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1759247143241</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,9 +255,9 @@
     <MESSAGE value="Some codes about TOPSIS but it's a little hard.And I'm strange about it,so I will absort these experiences and improve it next time." />
     <MESSAGE value="optimize AHP and TOPSIS codes , add validation check section to improve the code robustness, polish the output" />
     <MESSAGE value="A bad statement today and just made EWM , I am a little confused why I code so hard" />
-    <MESSAGE value="A day without coding" />
     <MESSAGE value="Refactor: Modularize preprocessing and configure project imports&#10;&#10;This commit refactors the data preprocessing pipeline and configures&#10;the project environment for robust cross-package imports.&#10;&#10;Key changes include:&#10;- Extracted all data processing logic into a dedicated&#10;  `pre_processor.py` module to improve reusability.&#10;&#10;- Decomposed the workflow into two distinct, composable steps:&#10;  1. Indicator forwarding (`forward_matrix`)&#10;  2. Data scaling (`scale_min_max`, `scale_z_score`, etc.)&#10;&#10;- **Configured the PyCharm project's Sources Root to enable absolute&#10;  imports between the `scoring_algorithm` and `weighting_algorithm`&#10;  packages.**&#10;&#10;- Updated all core algorithm scripts (TOPSIS, CRITIC, Entropy, CV)&#10;  to use the new modular functions via absolute imports.&#10;&#10;This change significantly reduces code duplication and clarifies the&#10;overall project architecture, making it more scalable and maintainable." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor: Modularize preprocessing and configure project imports&#10;&#10;This commit refactors the data preprocessing pipeline and configures&#10;the project environment for robust cross-package imports.&#10;&#10;Key changes include:&#10;- Extracted all data processing logic into a dedicated&#10;  `pre_processor.py` module to improve reusability.&#10;&#10;- Decomposed the workflow into two distinct, composable steps:&#10;  1. Indicator forwarding (`forward_matrix`)&#10;  2. Data scaling (`scale_min_max`, `scale_z_score`, etc.)&#10;&#10;- **Configured the PyCharm project's Sources Root to enable absolute&#10;  imports between the `scoring_algorithm` and `weighting_algorithm`&#10;  packages.**&#10;&#10;- Updated all core algorithm scripts (TOPSIS, CRITIC, Entropy, CV)&#10;  to use the new modular functions via absolute imports.&#10;&#10;This change significantly reduces code duplication and clarifies the&#10;overall project architecture, making it more scalable and maintainable." />
+    <MESSAGE value="A day without coding" />
+    <option name="LAST_COMMIT_MESSAGE" value="A day without coding" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ForGoals$Iterable_Object_Handling.coverage" NAME="Iterable_Object_Handling 覆盖结果" MODIFIED="1758209689123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
