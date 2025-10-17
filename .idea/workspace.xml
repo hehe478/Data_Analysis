@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="Refactor the code for TOPSIS, AHP, and the coefficient of variation method, and encapsulate the algorithm scripts into functions to improve reusability.">
+    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="Refactor the code for CRITIC and Entropy_Weight_Method, and encapsulate the algorithm scripts into functions to improve reusability.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/CRITIC.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/CRITIC.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/Entropy_Weight_Method.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm/Entropy_Weight_Method.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hehe478&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hehe478/Data_Analysis.git&quot;,
+    &quot;accountId&quot;: &quot;552ade79-8fdf-46c4-91d1-b0e8c149f052&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -36,32 +46,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.AHP.executor": "Run",
-    "Python.Analytic_Hierarchy_Process.executor": "Run",
-    "Python.CRITIC.executor": "Run",
-    "Python.CVM.executor": "Run",
-    "Python.Coefficient_of_Variation_Method.executor": "Run",
-    "Python.EWM.executor": "Run",
-    "Python.Entropy_Weight_Method.executor": "Run",
-    "Python.Iterable_Object_Handling.executor": "Run",
-    "Python.TOPSIS.executor": "Run",
-    "Python.TOPSIS1.executor": "Run",
-    "Python.numpyPractice.executor": "Run",
-    "Python.pre_processor.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.AHP.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Analytic_Hierarchy_Process.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CRITIC.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CVM.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Coefficient_of_Variation_Method.executor&quot;: &quot;Run&quot;,
+    &quot;Python.EWM.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Entropy_Weight_Method.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Iterable_Object_Handling.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TOPSIS.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TOPSIS1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.numpyPractice.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pre_processor.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ForGoals\E_and_A_algorithm\scoring_algorithm" />
@@ -111,7 +121,10 @@
       <workItem from="1760520347862" duration="147000" />
       <workItem from="1760541830609" duration="75000" />
       <workItem from="1760541946562" duration="2316000" />
-      <workItem from="1760625630800" duration="2239000" />
+      <workItem from="1760625630800" duration="2484000" />
+      <workItem from="1760628143115" duration="1271000" />
+      <workItem from="1760690804900" duration="168000" />
+      <workItem from="1760714801334" duration="534000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -265,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760544261388</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Refactor the code for CRITIC and Entropy_Weight_Method, and encapsulate the algorithm scripts into functions to improve reusability.">
+      <option name="closed" value="true" />
+      <created>1760628004719</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1760628004719</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +318,8 @@
     <MESSAGE value="Refactor: Modularize preprocessing and configure project imports&#10;&#10;This commit refactors the data preprocessing pipeline and configures&#10;the project environment for robust cross-package imports.&#10;&#10;Key changes include:&#10;- Extracted all data processing logic into a dedicated&#10;  `pre_processor.py` module to improve reusability.&#10;&#10;- Decomposed the workflow into two distinct, composable steps:&#10;  1. Indicator forwarding (`forward_matrix`)&#10;  2. Data scaling (`scale_min_max`, `scale_z_score`, etc.)&#10;&#10;- **Configured the PyCharm project's Sources Root to enable absolute&#10;  imports between the `scoring_algorithm` and `weighting_algorithm`&#10;  packages.**&#10;&#10;- Updated all core algorithm scripts (TOPSIS, CRITIC, Entropy, CV)&#10;  to use the new modular functions via absolute imports.&#10;&#10;This change significantly reduces code duplication and clarifies the&#10;overall project architecture, making it more scalable and maintainable." />
     <MESSAGE value="A day without coding" />
     <MESSAGE value="Refactor the code for TOPSIS, AHP, and the coefficient of variation method, and encapsulate the algorithm scripts into functions to improve reusability." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor the code for TOPSIS, AHP, and the coefficient of variation method, and encapsulate the algorithm scripts into functions to improve reusability." />
+    <MESSAGE value="Refactor the code for CRITIC and Entropy_Weight_Method, and encapsulate the algorithm scripts into functions to improve reusability." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor the code for CRITIC and Entropy_Weight_Method, and encapsulate the algorithm scripts into functions to improve reusability." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ForGoals$Entropy_Weight_Method.coverage" NAME="Entropy_Weight_Method 覆盖结果" MODIFIED="1760626242532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
