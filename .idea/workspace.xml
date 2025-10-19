@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="just create the practice file">
-      <change beforePath="$PROJECT_DIR$/.idea/ForGoals.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ForGoals.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="set the environment">
+      <change afterPath="$PROJECT_DIR$/Data_Process/EDA/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data_Process/EDA/eda_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data_Process/EDA/train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data_Process/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,33 +50,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.AHP.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Analytic_Hierarchy_Process.executor&quot;: &quot;Run&quot;,
-    &quot;Python.CRITIC.executor&quot;: &quot;Run&quot;,
-    &quot;Python.CVM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Coefficient_of_Variation_Method.executor&quot;: &quot;Run&quot;,
-    &quot;Python.EWM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Entropy_Weight_Method.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Iterable_Object_Handling.executor&quot;: &quot;Run&quot;,
-    &quot;Python.TOPSIS.executor&quot;: &quot;Run&quot;,
-    &quot;Python.TOPSIS1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.numpyPractice.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pre_processor.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.AHP.executor": "Run",
+    "Python.Analytic_Hierarchy_Process.executor": "Run",
+    "Python.CRITIC.executor": "Run",
+    "Python.CVM.executor": "Run",
+    "Python.Coefficient_of_Variation_Method.executor": "Run",
+    "Python.EWM.executor": "Run",
+    "Python.Entropy_Weight_Method.executor": "Run",
+    "Python.Iterable_Object_Handling.executor": "Run",
+    "Python.TOPSIS.executor": "Run",
+    "Python.TOPSIS1.executor": "Run",
+    "Python.data_inspection.executor": "Run",
+    "Python.eda_utils.executor": "Run",
+    "Python.numpyPractice.executor": "Run",
+    "Python.pre_processor.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/ForGoals/Data_Process/EDA",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ForGoals\Data_Process\EDA" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ForGoals\E_and_A_algorithm\scoring_algorithm" />
       <recent name="D:\ForGoals\E_and_A_algorithm\Weighting_Algorthm" />
@@ -129,7 +137,9 @@
       <workItem from="1760714801334" duration="724000" />
       <workItem from="1760774545679" duration="339000" />
       <workItem from="1760776850351" duration="956000" />
-      <workItem from="1760777824707" duration="917000" />
+      <workItem from="1760777824707" duration="3629000" />
+      <workItem from="1760800418088" duration="51000" />
+      <workItem from="1760882025936" duration="4976000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -299,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760715519604</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="set the environment">
+      <option name="closed" value="true" />
+      <created>1760779663463</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1760779663463</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,9 +351,11 @@
     <MESSAGE value="Refactor the code for TOPSIS, AHP, and the coefficient of variation method, and encapsulate the algorithm scripts into functions to improve reusability." />
     <MESSAGE value="Refactor the code for CRITIC and Entropy_Weight_Method, and encapsulate the algorithm scripts into functions to improve reusability." />
     <MESSAGE value="just create the practice file" />
-    <option name="LAST_COMMIT_MESSAGE" value="just create the practice file" />
+    <MESSAGE value="set the environment" />
+    <option name="LAST_COMMIT_MESSAGE" value="set the environment" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ForGoals$eda_utils.coverage" NAME="eda_utils 覆盖结果" MODIFIED="1760889059827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data_Process/EDA" />
     <SUITE FILE_PATH="coverage/ForGoals$Entropy_Weight_Method.coverage" NAME="Entropy_Weight_Method 覆盖结果" MODIFIED="1760626242532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
     <SUITE FILE_PATH="coverage/ForGoals$pre_processor.coverage" NAME="pre_processor 覆盖结果" MODIFIED="1760627377231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
     <SUITE FILE_PATH="coverage/ForGoals$Iterable_Object_Handling.coverage" NAME="Iterable_Object_Handling 覆盖结果" MODIFIED="1758209689123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
@@ -344,6 +364,7 @@
     <SUITE FILE_PATH="coverage/ForGoals$AHP.coverage" NAME="AHP 覆盖结果" MODIFIED="1758790835732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
     <SUITE FILE_PATH="coverage/ForGoals$Analytic_Hierarchy_Process.coverage" NAME="Analytic_Hierarchy_Process 覆盖结果" MODIFIED="1760543844299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
     <SUITE FILE_PATH="coverage/ForGoals$numpyPractice.coverage" NAME="numpyPractice 覆盖结果" MODIFIED="1758986773303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/ForGoals$data_inspection.coverage" NAME="data_inspection 覆盖结果" MODIFIED="1760885953894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data_Process/EDA" />
     <SUITE FILE_PATH="coverage/ForGoals$CVM.coverage" NAME="CVM 覆盖结果" MODIFIED="1759155327604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
     <SUITE FILE_PATH="coverage/ForGoals$TOPSIS.coverage" NAME="TOPSIS 覆盖结果" MODIFIED="1760542790608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/scoring_algorithm" />
     <SUITE FILE_PATH="coverage/ForGoals$CRITIC.coverage" NAME="CRITIC 覆盖结果" MODIFIED="1760626063624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/E_and_A_algorithm/weighting_algorthm" />
