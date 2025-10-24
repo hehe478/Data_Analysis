@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="learn how to use the analysis result from pandas">
-      <change afterPath="$PROJECT_DIR$/addendum/__init__.py" afterDir="false" />
+    <list default="true" id="fde9ebfc-2d6b-456b-a0ef-985db0365146" name="更改" comment="Tired to set the environment wo show markdown i pycharm,so I delete md instead of using html.It also cannot display in pycharm I don't know why but can in browser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Process/EDA/Pandas describe Data Processing Guide.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ForGoals/Data_Process/EDA&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ForGoals/addendum&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -80,6 +78,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ForGoals\addendum" />
       <recent name="D:\ForGoals\Data_Process\EDA" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -149,6 +148,9 @@
       <workItem from="1761192634257" duration="139000" />
       <workItem from="1761192786981" duration="725000" />
       <workItem from="1761193854558" duration="60000" />
+      <workItem from="1761193927017" duration="330000" />
+      <workItem from="1761227923625" duration="3000" />
+      <workItem from="1761230965041" duration="825000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -358,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761152431640</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Tired to set the environment wo show markdown i pycharm,so I delete md instead of using html.It also cannot display in pycharm I don't know why but can in browser">
+      <option name="closed" value="true" />
+      <created>1761194243569</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1761194243569</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +406,8 @@
     <MESSAGE value="set the environment" />
     <MESSAGE value="First version about my eda_utils,but tomorrow I need more checks" />
     <MESSAGE value="learn how to use the analysis result from pandas" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn how to use the analysis result from pandas" />
+    <MESSAGE value="Tired to set the environment wo show markdown i pycharm,so I delete md instead of using html.It also cannot display in pycharm I don't know why but can in browser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tired to set the environment wo show markdown i pycharm,so I delete md instead of using html.It also cannot display in pycharm I don't know why but can in browser" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ForGoals$eda_utils.coverage" NAME="eda_utils 覆盖结果" MODIFIED="1761150466128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data_Process/EDA" />
