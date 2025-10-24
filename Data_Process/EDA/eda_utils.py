@@ -73,12 +73,37 @@ def inspect_and_summarize_dataframe(csv_path: str, columns_to_ignore_unique: lis
     # 检查数据是否加载正确，例如shape说总共有10000行，那tail()的最后的索引应该是9999
 
     print("\n--- 1.1.4 结构总览 (Info) ---")
-    print(df.info(verbose = True,memory_usage='deep'))  # verbose 用来保证如果太多列了即太多特征了，他不会把中间的各列的信息给忽略不打印
+    print(df.info(verbose=True, memory_usage='deep'))  # verbose 用来保证如果太多列了即太多特征了，他不会把中间的各列的信息给忽略不打印
     # verbose这个参数最常用在例如机器学习中展示进度，加载函数中显示加载日志，以及此处，取值0(False)，1(True)，2
     # 不加memory_usage = 'deep' 导致只是计算指针在内存中的占用空间而不是指针的指向的对象的占用空间，不准确，适用于存在大量object的时候
     # 可以用来查看是否有的列存在字符串导致看似是数值实际是字符串类型，比如年龄，本应是数字，却被识别为object，这就说明其中存在str
     # 可以用来帮你快速了解哪些列存在Nan
     # 评估内存占用，如果发现内存过大需要优化，可以将一些object例如性别转化为category，节约一下
+
+    # --- (新功能) 1.1.5 缺失值摘要 ---
+    print("\n--- 1.1.5 缺失值摘要 (Missing Value Summary) ---")
+    missing_values = df.isnull().sum()
+    # .isnull().sum() 统计每列有多少个缺失(NaN)值
+    missing_percent = (df.isnull().mean() * 100).round(2)
+    # .isnull().mean() 直接计算每列的缺失值百分比，.round(2) 保留两位小数
+
+    missing_summary = pd.DataFrame({
+        'Missing Count': missing_values,
+        'Missing Percent (%)': missing_percent
+    })
+
+    # 只显示那些真正有缺失值的列，并按百分比降序排列，让我们一眼看到最严重的问题列
+    print("--- 仅显示存在缺失值的列 ---")
+    print(missing_summary[missing_summary['Missing Count'] > 0].sort_values(by='Missing Percent (%)', ascending=False))
+    # 缺失比例是决定数据填充（imputation）策略或是否直接删除列（如缺失>50%）的重要依据
+
+    # --- (新功能) 1.1.6 重复行检查 ---
+    print("\n--- 1.1.6 重复行检查 (Duplicate Row Check) ---")
+    duplicate_count = df.duplicated().sum()
+    # .duplicated().sum() 计算数据集中有多少行是 *完全* 重复的
+    print(f"数据集中总共发现 {duplicate_count} 行完全重复的数据。")
+    # 如果这个值大于0，说明数据采集或合并时可能出错，会使统计分析（如求和、计数）偏高，需要考虑 drop_duplicates()
+
 
     print("\n" + "=" * 60 + "\n")
 
@@ -93,7 +118,25 @@ def inspect_and_summarize_dataframe(csv_path: str, columns_to_ignore_unique: lis
     # 默认只包含数值型
     print(df.describe())
 
-    print("\n--- 1.2.2 类别型特征摘要 (Describe - Object/Bool) ---")
+    # --- (新功能) 1.2.2 分布形态摘要 ---
+    print("\n--- 1.2.2 分布形态摘要 (Skewness and Kurtosis) ---")
+    # .skew() 计算偏度，量化分布的不对称性
+    # 偏度 > 1 (强右偏，如收入)，< -1 (强左偏)，接近 0 (对称)
+    # 偏度是判断是否需要对数据进行对数变换(log transform)的重要指标
+    skewness = df.skew(numeric_only=True)
+
+    # .kurt() 计算峰度，量化分布的“尖峭”程度和“尾部”厚度
+    # 峰度 > 0 (尖峰厚尾)，说明极端异常值(outliers)比正态分布多
+    # 峰度 < 0 (平顶薄尾)，说明异常值比正态分布少
+    kurtosis = df.kurt(numeric_only=True)
+
+    shape_summary = pd.DataFrame({
+        'Skewness': skewness,
+        'Kurtosis': kurtosis
+    })
+    print(shape_summary)
+
+    print("\n--- 1.2.3 类别型特征摘要 (Describe - Object/Bool) ---") # (原 1.2.2)
     # 显式指定 'object' 和 'bool'
     try:
         print(df.describe(include=['object', 'bool']))
@@ -102,7 +145,18 @@ def inspect_and_summarize_dataframe(csv_path: str, columns_to_ignore_unique: lis
 
     print("\n" + "=" * 60 + "\n")
 
-    # --- 1.2.3 按数据类型进行深度摘要 (Value Counts & Unique) ---
+    # --- (新功能) 1.2.4 基数摘要 ---
+    print("\n--- 1.2.4 基数摘要 (Cardinality / Unique Values Count) ---")
+    cardinality = df.nunique()
+    # .nunique() 统计每列有多少个 *唯一值*
+    print(cardinality.sort_values(ascending=False))
+    # 这个摘要非常重要，能帮我们快速识别：
+    # 1. 常量列 (nunique == 1)，这些列没有信息，可以删除，或者说设置为Index(索引)
+    # 2. 二元列 (nunique == 2)，如 'Sex'
+    # 3. 高基数列 (nunique 接近总行数)，如 'Name', 'Ticket', 'ID'，这些列通常不能直接用于建模
+    # 4. 低基数类别列 (nunique 适中)，如 'Pclass', 'Embarked'，这些是分类特征的主力
+
+    # --- 1.2.5 按数据类型进行深度摘要 (Value Counts & Unique) --- # (原 1.2.3)
 
     # 1. 获取所有列的 dtype
     all_dtypes = df.dtypes
